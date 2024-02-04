@@ -26,25 +26,68 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-color: white;
+  background-color: rgb(201, 206, 172);
   flex-wrap: wrap;
   gap: 10px;
-  border-bottom: solid 5px;
+  border-bottom: solid 0;
   border-color: black;
+}
+
+.logo-container {
+  width: 100%;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .logo {
   margin-bottom: 20px;
   position: relative;
-  top:10px;
-  left:-450px;
+  top: 15px;
+}
+
+img {
+  height: 250px;
+  width: 550px;
+  border-radius: 30px;
+  box-shadow: 0 0 5px;
+}
+
+.main-info-container {
+  position: absolute;
+  top: 130px;
+  right: 80px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: rgb(0, 0, 0);
+  background-color: rgb(254, 151, 151);
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.boatload {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  background-color: rgb(144, 142, 144);
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  padding: 0;
+}
+
+.truckload {
+  color: rgb(255, 255, 255);
+  font-size: 45px;
+  background-color: rgb(141, 141, 141);
+  border-radius: 10px;
+  box-shadow: 0 0 10px;
+  padding: 0;
 }
 
 .nav-link-btns {
   display: flex;
   justify-content: flex-end;
-  align-items:end
-  flex: 1;
+  align-items: end;
 }
 
 button {
@@ -67,27 +110,27 @@ button:hover {
 }
 
 .furniture-btn {
-    position: absolute;
-    top: 0;
-    right: 506px;
+  position: absolute;
+  top: 0;
+  right: 506px;
 }
 
 .rugs-btn {
-    position: absolute;
-    top: 0;
-    right: 358px;
+  position: absolute;
+  top: 0;
+  right: 358px;
 }
 
 .appliance-btn {
-    position: absolute;
-    top: 0;
-    right: 210px;
+  position: absolute;
+  top: 0;
+  right: 210px;
 }
 
 .contact-us-btn {
-    position: absolute;
-    top: 0;
-    right: 62px;
+  position: absolute;
+  top: 0;
+  right: 62px;
 }
 
 .seperator-furniture {
@@ -96,31 +139,37 @@ button:hover {
   font-size: 30px;
   font-weight: 400;
   position: absolute;
-  top:0;
+  top: 0;
   right: 187px;
 }
 
 .seperator-rugs {
-    color: rgb(74, 81, 81);
-    padding: 0 10px;
-    font-size: 30px;
-    font-weight: 400;
-    position: absolute;
-    top:0;
-    right: 335px;
-  }
+  color: rgb(74, 81, 81);
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 335px;
+}
 
-  .seperator-appliance {
-    color: rgb(74, 81, 81);
-    padding: 0 10px;
-    font-size: 30px;
-    font-weight: 400;
-    position: absolute;
-    top:0;
-    right: 483px;
-  }
+.seperator-appliance {
+  color: rgb(74, 81, 81);
+  padding: 0 10px;
+  font-size: 30px;
+  font-weight: 400;
+  position: absolute;
+  top: 0;
+  right: 483px;
+}
 
-  .main-info-container {
-    width: 50%;
-    height: 75%
-  }
+/* Opening Section*/
+
+.section-hero {
+  font-size: 30px;
+}
+
+.section-hero span {
+  background-color: blue;
+  color: white;
+}
