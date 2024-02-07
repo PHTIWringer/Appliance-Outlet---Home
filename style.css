@@ -20,6 +20,17 @@ body {
   background-color: #000000; /*margin color*/
 }
 
+/*Content Wrapper*/
+
+.content-wrapper {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
 /* HEADER */
 
 .header {
@@ -33,6 +44,7 @@ body {
 .logo-container {
   flex: 1;
   justify-content: center;
+  padding-left: 10%;
 }
 
 .logo {
@@ -123,47 +135,30 @@ button.contact-us-btn {
   }
 }
 
-/*
-
 .main-info-container {
   margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 50%;
+  max-width: 100%;
+  font-size: 30px;
 }
 
-.boatload {
-  color: rgb(255, 255, 255);
-  font-size: 45px;
-  background-color: rgb(144, 142, 144);
-  border-radius: 10px;
-  box-shadow: 0 0 10px;
-  padding: 0;
-  text-align: center;
+.main-info-our-motto {
+  color: #fdb515;
 }
 
+.boatload,
 .truckload {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 45px;
-  background-color: rgb(141, 141, 141);
-  border-radius: 10px;
-  box-shadow: 0 0 10px;
   padding: 0;
   text-align: center;
-}
-
-*/
-
-/*Content Wrapper*/
-
-.content-wrapper {
-  background-color: white;
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: underline;
 }
 
 /* Opening Section*/
@@ -173,6 +168,6 @@ button.contact-us-btn {
 }
 
 .section-hero span {
-  background-color: blue;
-  color: white;
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
