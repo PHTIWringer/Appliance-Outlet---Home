@@ -199,6 +199,15 @@ button.contact-us-btn {
   text-decoration: underline;
 }
 
+.snap-finace {
+  display: grid;
+  padding: 40px;
+  text-align: center;
+}
+
+.snap-finace-logo img {
+}
+
 /* WHAT AOH SELLS STYLING AND PHOTOS */
 
 .section-hero-furniture,
