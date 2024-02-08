@@ -33,7 +33,7 @@ body {
 
 /* HEADER */
 
-.header {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -135,6 +135,8 @@ button.contact-us-btn {
   }
 }
 
+/* SLOGAN */
+
 .main-info-container {
   margin-left: 20px;
   margin-right: 20px;
@@ -161,7 +163,7 @@ button.contact-us-btn {
   text-decoration: underline;
 }
 
-/* Opening Section*/
+/* SCROLL TO TOP BUTTON */
 
 #scrollToTopButton {
   display: none;
@@ -182,6 +184,10 @@ button.contact-us-btn {
   background-color: #555;
 }
 
+/* Opening Section*/
+
+/* ABOUT AOH INFO */
+
 .section-hero {
   font-size: 30px;
   width: 100%;
@@ -192,6 +198,8 @@ button.contact-us-btn {
 .section-hero span {
   text-decoration: underline;
 }
+
+/* WHAT AOH SELLS STYLING AND PHOTOS */
 
 .section-hero-furniture,
 .section-hero-rugs,
