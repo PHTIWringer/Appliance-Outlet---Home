@@ -219,6 +219,21 @@ button.contact-us-btn {
   animation-duration: 2s;
 }
 
+.photo-container-recliner {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.photo-container-recliner img {
+  width: 100%;
+}
+
+.image-fade-recliner {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
 .photo-container-rugs {
   max-width: 1000px;
   position: relative;
@@ -248,5 +263,9 @@ button.contact-us-btn {
 }
 
 .main-info-rugs {
+  padding-bottom: 40px;
+}
+
+.recliner {
   padding-bottom: 40px;
 }
