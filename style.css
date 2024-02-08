@@ -17,7 +17,7 @@ body {
   line-height: 1;
   color: black;
   overflow-x: hidden;
-  background-color: #000000; /*margin color*/
+  background-color: #cecece; /*margin color*/
 }
 
 /*Content Wrapper*/
@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
