@@ -1,3 +1,18 @@
+"use strict";
+
+/* button scrolling*/
+
+document.querySelectorAll(".nav-link-btns button").forEach((button) => {
+  button.addEventListener("click", function () {
+    const section = document.querySelector(this.getAttribute("data-href"));
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
+
+/* IMG slideshows */
+
 let index = 0;
 displayImages();
 function displayImages() {
