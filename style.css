@@ -165,9 +165,88 @@ button.contact-us-btn {
 
 .section-hero {
   font-size: 30px;
+  width: 100%;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 .section-hero span {
-  color: rgb(0, 0, 0);
   text-decoration: underline;
+}
+
+.section-hero-furniture,
+.section-hero-rugs,
+.section-hero-appliance,
+.section-hero-contact-us {
+  text-align: center;
+  font-size: 30px;
+}
+
+.sectionals {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.photo-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.photo-container img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.image-fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.photo-container-loveseat {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.photo-container-loveseat img {
+  width: 100%;
+}
+
+.image-fade-loveseat {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+.photo-container-rugs {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.photo-container-rugs img {
+  width: 100%;
+}
+
+.image-fade-rugs {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.loveseats {
+  padding-bottom: 40px;
+}
+
+.main-info-rugs {
+  padding-bottom: 40px;
 }
