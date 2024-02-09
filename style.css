@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /*1 rem = 10px */
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -20,7 +20,7 @@ body {
   background-color: #cecece; /*margin color*/
 }
 
-/*Content Wrapper*/
+/*Structure*/
 
 .content-wrapper {
   background-color: white;
@@ -31,8 +31,6 @@ body {
   border-radius: 10px;
 }
 
-/* HEADER */
-
 header {
   display: flex;
   justify-content: space-between;
@@ -41,19 +39,7 @@ header {
   flex-wrap: wrap;
 }
 
-.logo-container {
-  flex: 1;
-  justify-content: center;
-  padding-left: 23%;
-}
-
-.logo {
-  height: auto;
-  max-width: 65%;
-  border-radius: 10px;
-  box-shadow: 0 0 5px;
-}
-
+/* Navigation */
 .nav-link-btns {
   display: flex;
   gap: 10px;
@@ -63,6 +49,25 @@ header {
   padding-bottom: 20px;
 }
 
+.logo-container {
+  flex: 1;
+  justify-content: center;
+  padding-left: 23%;
+}
+
+.logo,
+.photo-container img,
+.photo-container-loveseat img,
+.photo-container-recliner img,
+.photo-container-rugs img {
+  width: 100%;
+  height: auto;
+  max-width: 65%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px;
+}
+
+/*Buttons and Links*/
 button {
   background: none;
   border: none;
@@ -75,15 +80,6 @@ button {
 button:hover {
   color: rgb(241, 179, 103);
   text-decoration: none;
-}
-
-.header > .nav-link-btns {
-  position: top;
-  order: 2;
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 20px;
 }
 
 button.furniture-btn,
@@ -153,15 +149,6 @@ button.contact-us-btn {
   color: #fdb515;
 }
 
-.boatload,
-.truckload {
-  color: rgb(0, 0, 0);
-  font-size: clamp(1rem, 2.5vw, 50px);
-  padding: 0;
-  text-align: center;
-  text-decoration: underline;
-}
-
 /* SCROLL TO TOP BUTTON */
 
 #scrollToTopButton {
@@ -183,11 +170,18 @@ button.contact-us-btn {
   background-color: #555;
 }
 
-/* Opening Section*/
-
 /* ABOUT AOH INFO */
 
-.section-hero {
+/*Section Specific Styles*/
+.section-hero,
+.section-hero-furniture,
+.section-hero-rugs,
+.section-hero-appliance,
+.section-hero-contact-us,
+.sectionals,
+.loveseats,
+.main-info-rugs,
+.recliner {
   font-size: clamp(1rem, 2.5vw, 30px);
   width: 100%;
   padding-bottom: 50px;
@@ -195,6 +189,15 @@ button.contact-us-btn {
 }
 
 .section-hero span {
+  text-decoration: underline;
+}
+
+.boatload,
+.truckload {
+  color: rgb(0, 0, 0);
+  font-size: clamp(1rem, 2.5vw, 50px);
+  padding: 0;
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -213,6 +216,12 @@ button.contact-us-btn {
 
 /* WHAT AOH SELLS STYLING AND PHOTOS */
 
+.photo-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
 .section-hero-furniture,
 .section-hero-rugs,
 .section-hero-appliance,
@@ -221,68 +230,25 @@ button.contact-us-btn {
   font-size: 30px;
 }
 
-.sectionals {
+.sectionals,
+.loveseats,
+.recliner {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
 }
 
-.photo-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.photo-container img {
-  width: 100%;
-  padding-bottom: 50px;
-}
-
-.image-fade {
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-.photo-container-loveseat {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.photo-container-loveseat img {
-  width: 100%;
-}
-
-.image-fade-loveseat {
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
-.photo-container-recliner {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-.photo-container-recliner img {
-  width: 100%;
-}
-
-.image-fade-recliner {
-  animation-name: fade;
-  animation-duration: 2s;
-}
-
+.photo-container-loveseat,
+.photo-container-recliner,
 .photo-container-rugs {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-.photo-container-rugs img {
-  width: 100%;
-}
-
+.image-fade,
+.image-fade-loveseat,
+.image-fade-recliner,
 .image-fade-rugs {
   animation-name: fade;
   animation-duration: 2s;
@@ -295,16 +261,4 @@ button.contact-us-btn {
   to {
     opacity: 1;
   }
-}
-
-.loveseats {
-  padding-bottom: 40px;
-}
-
-.main-info-rugs {
-  padding-bottom: 40px;
-}
-
-.recliner {
-  padding-bottom: 40px;
 }
