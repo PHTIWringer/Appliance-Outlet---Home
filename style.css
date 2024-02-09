@@ -59,7 +59,8 @@ header {
 .photo-container img,
 .photo-container-loveseat img,
 .photo-container-recliner img,
-.photo-container-rugs img {
+.photo-container-rugs img,
+.photo-container-appliance img {
   width: 100%;
   height: auto;
   max-width: 65%;
@@ -126,7 +127,7 @@ button.contact-us-btn {
 
 @media (max-width: 480px) {
   .logo {
-    width: 70%;
+    width: 80%;
   }
 }
 
@@ -142,7 +143,7 @@ button.contact-us-btn {
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  font-size: clamp(1rem, 2.5vw, 25px);
+  font-size: clamp(2rem, 2.5vw, 25px);
 }
 
 .main-info-our-motto {
@@ -181,10 +182,12 @@ button.contact-us-btn {
 .sectionals,
 .loveseats,
 .main-info-rugs,
-.recliner {
+.recliner,
+.main-info-appliance,
+.main-info-furniture {
   font-size: clamp(1rem, 2.5vw, 30px);
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -195,7 +198,7 @@ button.contact-us-btn {
 .boatload,
 .truckload {
   color: rgb(0, 0, 0);
-  font-size: clamp(1rem, 2.5vw, 50px);
+  font-size: clamp(2.5rem, 3vw, 40px);
   padding: 0;
   text-align: center;
   text-decoration: underline;
@@ -240,16 +243,22 @@ button.contact-us-btn {
 
 .photo-container-loveseat,
 .photo-container-recliner,
-.photo-container-rugs {
+.photo-container-rugs,
+.photo-container-appliance {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
+.main-info-appliance {
+  padding-bottom: 40px;
+}
+
 .image-fade,
 .image-fade-loveseat,
 .image-fade-recliner,
-.image-fade-rugs {
+.image-fade-rugs,
+.image-fade-appliance {
   animation-name: fade;
   animation-duration: 2s;
 }
@@ -261,4 +270,175 @@ button.contact-us-btn {
   to {
     opacity: 1;
   }
+}
+
+/* HOURS */
+
+.store-hours {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1rem, 2.5vh, 30px);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.section-hero-main-hours table {
+  width: 100%; /* Full width of its container */
+  border-collapse: collapse; /* Collapses the border */
+  margin: 20px 0; /* Adds some space around the table */
+  font-size: 16px; /* Sets a readable font size */
+  border-radius: 5px; /* Optional: Rounds the corners of the table */
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  overflow: hidden; /* Ensures the border radius clips the content */
+}
+
+.section-hero-main-hours th,
+.section-hero-main-hours td {
+  padding: 12px 20px; /* Adds space inside each cell */
+  text-align: left; /* Aligns text to the left */
+  border-bottom: 1px solid #f0f0f0; /* Adds a light border to the bottom of each cell */
+}
+
+.section-hero-main-hours th {
+  background-color: #f8f8f8; /* Light background color for header cells */
+  color: #333; /* Dark text for contrast */
+  font-weight: bold; /* Makes header text bold */
+}
+
+.section-hero-main-hours tr:last-child td {
+  border-bottom: none; /* Removes the bottom border from the last row */
+}
+
+.section-hero-main-hours td {
+  color: #666; /* Slightly lighter text color for body cells */
+}
+
+.section-hero-main-hours tr:nth-child(even) td {
+  background-color: #f9f9f9; /* Adds a zebra-stripe effect */
+}
+
+/* Enhancements for responsiveness and visual appeal */
+@media screen and (max-width: 600px) {
+  .section-hero-main-hours table {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Google Map */
+
+.google-map {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  box-shadow: 0 0 10px;
+}
+
+.main-info-map {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: clamp(1rem, 2.5vw, 30px);
+}
+
+/* Footer */
+
+/* Footer Styles */
+.main-info-footer {
+  background-color: #ffffff; /* Light grey background for contrast */
+  color: #333; /* Dark text color for readability */
+  padding: 20px 0; /* Padding around the footer content */
+  font-family: Arial, sans-serif; /* Clean, professional font */
+}
+
+.footer-resources {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000; /* Slightly darker color for headings */
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+.main-info-address {
+  margin-bottom: 20px;
+}
+
+.address {
+  margin: 0 0 0px 0; /* Spacing between address and links */
+}
+
+.footer-link {
+  color: #0066cc; /* Subtle blue for links */
+  text-decoration: none; /* Remove underline from links */
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.footer-link-cu {
+  color: #0066cc; /* Subtle blue for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-link-cu:hover {
+  text-decoration: underline; /* Add underline on hover for better accessibility */
+}
+
+.nav-col {
+  margin-top: 20px;
+}
+
+.footer-nav {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Align with the rest of the footer content */
+}
+
+.footer-nav li {
+  margin-bottom: 5px; /* Space out the nav items */
+}
+
+/* Responsive Design for smaller screens */
+@media screen and (max-width: 768px) {
+  .main-info-footer {
+    text-align: center; /* Center align footer content on small screens */
+  }
+  .nav-col {
+    margin-top: 10px;
+  }
+}
+
+.footer-resources-OWD {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000; /* Slightly darker color for headings */
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-resources-OWD a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-resources-OWD:hover a {
+  color: rgb(241, 179, 103);
 }

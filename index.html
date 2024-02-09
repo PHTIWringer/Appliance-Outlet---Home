@@ -6,6 +6,9 @@
     <title>Appliance Outlet & Home</title>
     <link rel="icon" type="image/png" href="img/Icon.png">
     <link rel="stylesheet" href="style.css">
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=&loading=async&callback=initMap">
+</script>
   </head>
 
   <body>
@@ -138,62 +141,58 @@
 
     <section class="section-hero-appliance" id="appliances">
       <h2 class="main-info-appliance">APPLIANCES</h2>
+      <div class="photo-container-appliance">
+        <div class="image-fade-appliance">
+          <img class="mySlides" src="img/stoveElectric.webp" alt="Electric Stove"></img>
+        </div>
+        <div class="image-fade-appliance">
+        <img class="mySlides" src="img/stoveGasRange.jpg" alt="Stove Gas Range"></img>
+        </div>
+        <div class="image-fade-appliance">
+        <img class="mySlides" src="img/Fridge1.jpg" alt="Fridge"></img>
+        </div>
+      <div class="image-fade-appliance">
+        <img class="mySlides" src="img/Fridge2.jpg" alt="Fridge"></img>
+      </div>
+      <div class="image-fade-appliance">
+        <img class="mySlides" src="img/dishwasher1.jpg" alt="Dishwasher"></img>
+      </div>
+      <div class="image-fade-appliance">
+        <img class="mySlides" src="img/dishwasher2.webp" alt="Dishwasher"></img>
+      </div>
+      </div>
     </section>
 
-<!--CONTACT US SECTION/MODAL-->
+<!--CONTACT US SECTION/MODAL
 
     <section class="section-hero-contact-us" id="contact-us">
       <h2 class="main-info-contact-us">CONTACT US</h2>
     </section>
 
+-->
+
 <!--GOOGLE MAP-->
 
     <section class="section-hero-map-location">
-      <h4 class="main-info-map">FIND US HERE:</h4>
-      <p>We can be found on <span>Google</span> by searching <span>AOH Norton Shores</span></p>
+      <h4 class="main-info-map">FIND US HERE</h4>
+      <p class="main-info-map">We can be found on Google by searching AOH Norton Shores</p>
+      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2910.540813565788!2d-86.22177598804257!3d43.156170871009664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88197f8e07ea1611%3A0xa820abfbb1b643a6!2sAOH%20APPLIANCE%20OUTLET%20AND%20HOME!5e0!3m2!1sen!2sus!4v1707442122690!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
 <!--STORE HOURS SECTION-->
 
     <section class="section-hero-main-hours" id="hours">
-        <ul class="main-info-hours">
-            <li class="days-attribute">
-                <ion-icon
-                name="Monday & Wednesday">
-            <span>Monday & Wednesday</span></ion-icon>
-            </li>
-            <li class="hours-attribute">
-                <ion-icon
-                name="10:00 AM - 7:00 PM"><span>10:00 AM - 7:00 PM</span></ion-icon>
-            </li>
-            <li class="days-attribute">
-                <ion-icon
-                name="Tuesday, Thursday & Friday">
-            <span>Tuesday, Thursday & Friday</span></ion-icon>
-            </li>
-            <li class="hours-attribute">
-                <ion-icon
-                name="10:00 AM - 5:30 PM"><span>10:00 AM - 5:30 PM</span></ion-icon>
-            </li>
-            <li class="days-attribute">
-                <ion-icon
-                name="Saturday">
-            <span>Saturday</span></ion-icon>
-            </li>
-            <li class="hours-attribute">
-                <ion-icon
-                name="10:00 AM - 5:00 PM"><span>10:00 AM - 5:00 PM</span></ion-icon>
-            </li>
-            <li class="days-attribute">
-                <ion-icon
-                name="Sunday">
-            <span>Sunday</span></ion-icon>
-            </li>
-            <li class="hours-attribute">
-                <ion-icon
-                name="CLOSED"><span>CLOSED</span></ion-icon>
-            </li>
-        </ul>
+      <h5 class="store-hours">STORE HOURS</h5>
+        <table>
+          <tr><th>Monday</th><td>10:00 AM - 7:00 PM</td></tr>
+          <tr><th>Tuesday</th><td>10:00 AM - 5:30 PM</td></tr>
+          <tr><th>Wednesday</th><td>10:00 AM - 7:00 PM</td></tr>
+          <tr><th>Thursday</th><td>10:00 AM - 5:30 PM</td></tr>
+          <tr><th>Friday</th><td>10:00 AM - 5:30 PM</td></tr>
+          <tr><th>Saturday</th><td>10:00 AM - 5:00 PM</td></tr>
+          <tr><th>Sunday</th><td>CLOSED</td></tr>
+        </table>
+      </section>
   </body>
 
 <!--ADDRESS AND CONTACT INFO TO MOVE TO MODAL-->
@@ -202,23 +201,32 @@
     <div class="footer-heading">
     <address class="main-info-address">
         <p class="address">
-            1058 E Sternberg Rd, Norton Shores, MI 49444
+            Appliance Outlet & Home <br>
+            1058 E Sternberg Rd,<br> Norton Shores, MI 49444 <br>
+            <br>
+            Phone:
         </p>
-        <a class="footer-link" href="tel:1-800-709-3744">1-800-709-FRIG(3744)</a><br />
-        <a class="footer-link" href="mailto:sherri@applianceoutletandhome.com">sherri@applianceoutletandhome.com</a>
+        <a class="footer-link-cu" href="tel:1-800-709-3744">1-800-709-FRIG(3744)</a><br />
+        <p>Email:
+          <br>
+        </p>
+        <a class="footer-link-cu" href="mailto:sherri@applianceoutletandhome.com">sherri@applianceoutletandhome.com</a>
     </address>
     </div>
 
 <!--RESOURCES SECTION AND SOCIAL MEDIA HANDLES-->
 
     <nav class="nav-col">
-        <p class="footer-heading">Resources</p>
+        <p class="footer-resources">Resources</p>
         <ul class="footer-nav">
-            <li><a class="footer-link" href="#">Privacy & Terms</a></li>
-            <li><a class="footer-link" href="#">Facebook Link</a></li>
-            <li><a class="footer-link" href="#">Instagram Link</a></li>
-            <li><a class="footer-link" href="#">OceanWave Digital Link</a></li>
+            <li><a class="footer-link" href="privacy.html" target="_blank">Privacy Policy</a></li>
+            <li><a class="footer-link" href="terms.html" target="_blank">Terms and Conditions</a></li>
+            <li><a class="footer-link" href="https://www.facebook.com/Applianceoutletandhome" target="_blank">Facebook Link</a></li>
+            <li><a class="footer-link" href="https://www.instagram.com/aoh_norton_shores" target="_blank">Instagram Link</a></li>
         </ul>
+        <p class="footer-resources">&copy; Appliance Outlet & Home. All Rights Reserved.</p>
+        <p class="footer-resources-OWD">Powered by <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">OceanWave Digital&trade;</a></p>
+
     </nav>
     <script src="script.js"></script>
   </footer>

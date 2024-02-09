@@ -36,6 +36,7 @@ startSlideshow("image-fade", 10000); // 10 seconds
 startSlideshow("image-fade-loveseat", 13000); // 13 seconds
 startSlideshow("image-fade-recliner", 15000); // 15 seconds
 startSlideshow("image-fade-rugs", 17000); // 17 seconds
+startSlideshow("image-fade-appliance", 19000); // 19 seconds
 
 /* Scroll to Top */
 
