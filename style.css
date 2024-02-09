@@ -44,12 +44,12 @@ header {
 .logo-container {
   flex: 1;
   justify-content: center;
-  padding-left: 10%;
+  padding-left: 23%;
 }
 
 .logo {
   height: auto;
-  max-width: 100%;
+  max-width: 65%;
   border-radius: 10px;
   box-shadow: 0 0 5px;
 }
@@ -70,7 +70,6 @@ button {
   color: rgb(74, 81, 81);
   cursor: pointer;
   text-decoration: none;
-  font-size: auto;
 }
 
 button:hover {
@@ -95,7 +94,7 @@ button.contact-us-btn {
   top: auto;
   right: auto;
   margin-left: 10px;
-  font-size: 25px;
+  font-size: clamp(15px, 2vw, 24px);
 }
 
 .seperator-furniture,
@@ -105,7 +104,7 @@ button.contact-us-btn {
   top: auto;
   right: auto;
   padding: 0 5px;
-  font-size: 35px;
+  font-size: clamp(30px, 2vw, 24px);
 }
 
 /* Tablets and Smaller Devices */
@@ -140,14 +139,14 @@ button.contact-us-btn {
 .main-info-container {
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 10px;
+  padding-top: 25px;
   padding-bottom: 20px;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   max-width: 100%;
-  font-size: 30px;
+  font-size: clamp(1rem, 2.5vw, 25px);
 }
 
 .main-info-our-motto {
@@ -157,7 +156,7 @@ button.contact-us-btn {
 .boatload,
 .truckload {
   color: rgb(0, 0, 0);
-  font-size: 45px;
+  font-size: clamp(1rem, 2.5vw, 50px);
   padding: 0;
   text-align: center;
   text-decoration: underline;
@@ -189,7 +188,7 @@ button.contact-us-btn {
 /* ABOUT AOH INFO */
 
 .section-hero {
-  font-size: 30px;
+  font-size: clamp(1rem, 2.5vw, 30px);
   width: 100%;
   padding-bottom: 50px;
   text-align: center;
@@ -200,12 +199,16 @@ button.contact-us-btn {
 }
 
 .snap-finace {
-  display: grid;
-  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  flex-direction: column;
+  padding-top: 50px;
 }
 
 .snap-finace-logo img {
+  margin-top: 10px;
 }
 
 /* WHAT AOH SELLS STYLING AND PHOTOS */
